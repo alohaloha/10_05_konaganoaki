@@ -1,0 +1,150 @@
+*{
+		box-sizing: border-box;
+		color: #333;
+
+}
+html{
+  height: 100%;
+}
+body {
+  background-color: white;
+  font-family: "Noto Sans JP,sans-serif";
+  font-size: 14px;
+  height: 100%;
+}
+header{
+  padding: 15px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #e7f3fc;
+  margin: 8px;
+  text-decoration: none;
+}
+.far,.fas{
+  font-size: 25px;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+}
+li.active{
+  border-bottom: 3px solid #43a2e5;
+}
+.thanks{
+  border: 1px #43a2e5 solid;
+  border-radius: 5px;
+  padding: 15px;
+}
+button {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid #43a2e5;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+
+
+
+
+label {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  margin: 8px 0;
+  text-align: center;
+  color: white;
+}
+input[type="text"],
+input[type="password"],
+select,
+input[type="date"] {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  margin: 8px auto;
+  padding-left: 8px;
+  border-radius: 5px;
+  border: 0.5px solid #43a2e5;
+}
+/* //plaseholderが見えていない状態＝入力済みの状態 */
+input[type="text"]:not(*):placeholder-shown,
+input[type="password"]:not(*):placeholder-shown{
+	background-color: white;
+}
+/* //plaseholderが見えている状態＝未入力の状態 */
+input[type="text"]:placeholder-shown,
+input[type="password"]:placeholder-shown{
+	background-color: #f6ebf0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 5px solid #43a2e5;
+}
+/* //adminクラスのついたボタン */
+button:hover{
+  background-color: #43a2e5;
+  color: white;
+}
+/* //linkタグのついたaタグ */
+a.link {
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 8px 16px;
+  border-bottom: 5px solid #43a2e5;
+}
+a.link:hover{
+    background-color: #43a2e5;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+tr{
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  
+}
+td{
+  text-align: center;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+th{
+    background-color: #43A2E5;
+    color: white;
+    width: 200px;
+    letter-spacing: 1px;
+}
